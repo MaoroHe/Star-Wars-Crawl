@@ -1,0 +1,14 @@
+* {
+    font-family: 'Gothic A1', sans-serif;
+    background-image: url('assets/pexels-francesco-ungaro-998641.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    color: #106afb;
+    margin-right: auto;
+    margin-left: auto;
+    width: 150px;
+    text-align: center;
+}
