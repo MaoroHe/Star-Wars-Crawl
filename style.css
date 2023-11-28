@@ -29,8 +29,8 @@ header {
 .rotate {
     display: flex;
     flex-flow: column;
-    height: 800px;
-    animation-duration: 30s;
+    height: 500px;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -42,9 +42,14 @@ header {
 
 @keyframes starwars {
     0% {
-        transform: perspective(80px) rotateX(20deg) translateY(100%);
+        transform: perspective(90px) rotateX(20deg) translateY(100%);
     }
     100% {
-        transform: perspective(20px) rotateX(20deg) translateY(1%);
+        transform: perspective(50px) rotateX(20deg) translateY(1%);
     }
+}
+
+.lorem {
+    max-height: 150px;
+    width: auto;
 }
