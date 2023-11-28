@@ -1,14 +1,50 @@
-* {
+body {
     font-family: 'Gothic A1', sans-serif;
     background-image: url('assets/pexels-francesco-ungaro-998641.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 header {
     color: #106afb;
     margin-right: auto;
     margin-left: auto;
-    width: 150px;
+    width: 300px;
     text-align: center;
+    font-size: 250%;
+}
+
+.effet {
+    color: #106afb;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    font-size: 250%;
+    text-align: justify;
+}
+
+.rotate {
+    display: flex;
+    flex-flow: column;
+    height: 800px;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-name: starwars;
+    transform-origin: 50% 100%;
+}
+
+@keyframes starwars {
+    0% {
+        transform: perspective(80px) rotateX(20deg) translateY(100%);
+    }
+    100% {
+        transform: perspective(20px) rotateX(20deg) translateY(1%);
+    }
 }
